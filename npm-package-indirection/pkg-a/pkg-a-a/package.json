@@ -1,0 +1,16 @@
+{
+  "name": "pkg-a-a",
+  "version": "0.0.1",
+  "dependencies": {
+    "@hermes-serverless/custom-promises": "^0.1.0",
+    "chalk": "^2.4.2"
+  },
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {},
+  "scripts": {
+    "clean": "rm -rf ./generated/ ./graphql.schema.json",
+    "start": "node index.js"
+  }
+}

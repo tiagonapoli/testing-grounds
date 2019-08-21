@@ -1,0 +1,16 @@
+{
+  "name": "pkg-a",
+  "version": "0.0.1",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "pkg-a-a": "file:./pkg-a-a"
+  },
+  "files": [
+    "pkg-a-a",
+    "index.js"
+  ],
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  }
+}
