@@ -1,0 +1,30 @@
+type Query {
+  cart: Cart @cacheControl(scope: PRIVATE) @withOrderFormId @withSegment
+}
+
+type Mutation {
+  updateItems(orderItems: [ItemInput]): Cart @withOrderFormId
+}
+
+type Cart {
+  items: [Item]
+  storePreferencesData: StorePreferencesData
+  value: Int
+}
+
+type StorePreferencesData {
+  currencyCode: String
+}
+
+type Item {
+  id: ID
+  imageUrl: String
+  name: String
+  price: Float
+  skuName: String
+}
+
+input ItemInput {
+  index: Int
+  quantity: Float
+}

@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "apollo-codegen": "^0.20.2",
+    "graphql": "^14.4.2",
+    "@graphql-codegen/cli": "^1.6.1",
+    "@graphql-codegen/typescript": "1.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "clean": "rm -rf ./generated/ ./graphql.schema.json",
+    "start": "node index.js"
+  }
+}
