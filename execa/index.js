@@ -1,10 +1,5 @@
-const { executeCodegen } = require('@graphql-codegen/cli');
-const { introspectSchema } = require('apollo-codegen');
 const path = require('path');
-
-const generateSchemaIntrospection = (schemaPath, outputPath) => {
-  return introspectSchema(schemaPath, outputPath);
-};
+const execa = require('execa')
 
 const generateTypescriptTypes = async () => {
   const schema = path.join(__dirname, 'graphql.schema.json');

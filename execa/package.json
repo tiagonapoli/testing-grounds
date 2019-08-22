@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "execa": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "clean": "rm -rf ./generated/ ./graphql.schema.json",
+    "start": "node index.js"
+  }
+}
