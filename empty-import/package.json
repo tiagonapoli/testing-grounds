@@ -1,5 +1,5 @@
 {
-  "name": "@hermes-serverless/bot-base",
+  "name": "empty-import",
   "version": "0.0.1",
   "scripts": {
     "start": "yarn build && node --trace-warnings build/index.js",
@@ -23,24 +23,10 @@
     "url": "https://github.com/hermes-serverless/bot-base/issues"
   },
   "homepage": "https://github.com/hermes-serverless/bot-base#readme",
-  "dependencies": {
-    "@hermes-serverless/cli-resources": "^0.0.9",
-    "@hermes-serverless/custom-promises": "^0.1.0",
-    "@hermes-serverless/fs-utils": "^0.0.2",
-    "get-stream": "^5.1.0",
-    "wtfnode": "^0.8.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@types/jest": "^24.0.11",
-    "@types/wtfnode": "^0.7.0",
-    "jest": "^24.7.1",
-    "nodemon": "^1.19.0",
-    "prettier": "^1.17.0",
-    "ts-jest": "^24.0.2",
+    "@types/node": "^12.7.2",
     "ts-node": "^8.3.0",
-    "tslint": "^5.16.0",
-    "tslint-config-airbnb": "^5.11.1",
-    "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.4.4"
   }
 }

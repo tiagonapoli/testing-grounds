@@ -1,15 +1,32 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "resolveJsonModule": true,
+    "alwaysStrict": true,
     "esModuleInterop": true,
-    "target": "es6",
-    "noImplicitAny": true,
+    "module": "commonjs",
     "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "skipLibCheck": true,
-    "sourceMap": true,
-    "outDir": "build"
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "target": "es2017",
+    "allowJs": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "lib": ["es2017"],
+    "listEmittedFiles": true,
+    "noEmitOnError": false,
+    "outDir": "./build",
+    "sourceMap": false
   },
   "include": ["./src/**/*"],
-  "exclude": ["node_modules", "src/__tests__"]
+  "exclude": ["node_modules", "src/__tests__"],
+  "typeAcquisition": {
+    "enable": false,
+  },
+
 }
