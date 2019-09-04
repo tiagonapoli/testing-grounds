@@ -1,8 +1,0 @@
-{
-  "functionName": "char-printer",
-  "language": "cpp",
-  "gpuCapable": false,
-  "scope": "public",
-  "functionVersion": "1.0.0",
-  "handler": "./main.out"
-}
