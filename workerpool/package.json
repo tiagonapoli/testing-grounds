@@ -1,0 +1,38 @@
+{
+  "name": "workerpool-tests",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "yarn ts-node src/index.ts",
+    "start:js": "node build/index.js",
+    "build": "rm -rf build && yarn tsc",
+    "prepare": "yarn build",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "format": "prettier --config ./prettier.config.js --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "preversion": "yarn lint && yarn format",
+    "version": "git add --all",
+    "postversion": "git push && git push --tags"
+  },
+  "author": "Tiago Nápoli <napoli.tiago96@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "get-stream": "^5.1.0",
+    "ps-tree": "^1.2.0",
+    "webpack": "^4.39.3",
+    "workerpool": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "@types/node": "^12.6.9",
+    "@types/ps-tree": "^1.1.0",
+    "@types/workerpool": "^3.1.0",
+    "jest": "^24.7.1",
+    "nodemon": "^1.19.0",
+    "prettier": "^1.17.0",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.16.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.4.4"
+  }
+}

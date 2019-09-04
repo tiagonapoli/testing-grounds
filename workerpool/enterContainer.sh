@@ -1,0 +1,1 @@
+docker exec -it workerpool /bin/sh
