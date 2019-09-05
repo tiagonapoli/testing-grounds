@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "enquirer": "^2.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  }
+}

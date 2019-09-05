@@ -1,0 +1,11 @@
+{
+  "name": "pkg-d",
+  "version": "0.0.1",
+  "dependencies": {
+    "chalk": "^2.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  }
+}
