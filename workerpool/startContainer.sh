@@ -1,0 +1,1 @@
+docker run --name workerpool --rm workerpool/test-container
