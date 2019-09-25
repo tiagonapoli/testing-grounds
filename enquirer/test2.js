@@ -4,7 +4,11 @@ const promptConfirm = async () => {
   const prompt = new Confirm({
     type: 'confirm',
     message: 'Wirklich?',
-    initial: 'y',
+    initial () {
+      const initial = 'y'
+      this.options.initial = initial // How I am working around this issue
+      return initial
+    },
     default: '(Y/n)'
   })
 

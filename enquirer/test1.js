@@ -5,10 +5,13 @@ const prompt = new Confirm({
   name: 'really',
   message: 'Wirklich?',
   initial: 'j',
-  default: '(J/n)'
+  default: '(J/n)',
+  isTrue(input) {
+    console.log("IS TRUE", this.initial)
+    return input === 'j';
+  }
 });
 
-prompt.isTrue = input => input === 'j';
 prompt.isFalse = input => input === 'n';
 
 prompt.run()
