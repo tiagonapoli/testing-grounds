@@ -26,6 +26,9 @@
     "paths": {
       "vtex.asd": [
         "./tipos/vtex.asd"
+      ],
+      "vtex.qwer": [
+        "./tipos/vtex.qwer"
       ]
     }
   },
