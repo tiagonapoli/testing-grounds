@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": false,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "target": "es2017",
+    "allowJs": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "lib": ["es2017"],
+    "listEmittedFiles": true,
+    "noEmitOnError": false,
+    "outDir": "./build",
+    "sourceMap": false,
+    "baseUrl": ".",
+    "paths": {
+      "vtex.asd": [
+        "./tipos/vtex.asd"
+      ]
+    }
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "src/__tests__"],
+  "typeAcquisition": {
+    "enable": false,
+  },
+
+}
