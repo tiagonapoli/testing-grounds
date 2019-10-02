@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "skipLibCheck": true,
+    "outDir": "./build"
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "src/__tests__"]
+}

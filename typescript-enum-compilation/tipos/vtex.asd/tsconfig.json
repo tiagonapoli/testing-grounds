@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "skipLibCheck": true,
+    "listEmittedFiles": true,
+    "listFiles": true,
+    "outDir": "../node_modules/vtex.asd"
+  },
+  "files": ["./exportsToCompile.ts"]
+}

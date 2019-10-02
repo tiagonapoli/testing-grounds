@@ -1,0 +1,4 @@
+{
+    "types": "allExports.d.ts",
+    "main": "exportsToCompile.js"
+}

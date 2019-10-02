@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "skipLibCheck": false,
+    "outDir": "./build",
+    "baseUrl": ".",
+    "paths": {
+      "vtex.asd": ["./tipos/vtex.asd"]
+    }
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "src/__tests__"]
+}
