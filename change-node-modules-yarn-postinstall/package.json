@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "postinstall-postinstall": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "clean": "rm -rf ./generated/ ./graphql.schema.json",
+    "start": "node index.js",
+    "postinstall": "echo 'postinstall'",
+    "postuninstall": "echo 'postuninstall",
+    "prepare": "echo 'prepare'"
+  }
+}
