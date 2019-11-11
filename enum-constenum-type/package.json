@@ -1,0 +1,22 @@
+{
+  "name": "enum-constenum-type",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "yarn build && node --trace-warnings build/index.js",
+    "start:prod": "node index.js",
+    "test": "jest --logHeapUsage",
+    "build": "rm -rf build && yarn tsc",
+    "prepare": "yarn build",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "format": "prettier --config ./prettier.config.js --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "preversion": "yarn lint && yarn format",
+    "version": "git add --all",
+    "postversion": "git push && git push --tags"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^12.7.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.4.4"
+  }
+}
